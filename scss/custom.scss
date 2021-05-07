@@ -1,0 +1,194 @@
+// /*!
+//  * Bootstrap v4.3.1 (https://getbootstrap.com/)
+//  * Copyright 2011-2019 The Bootstrap Authors
+//  * Copyright 2011-2019 Twitter, Inc.
+//  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+//  */
+
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "utilities";
+@import "print";
+
+
+@mixin font-family {
+  font-family: "Roboto",sans-serif;
+  color: #121212;
+}
+
+@mixin center {
+  margin: 0 auto;
+}
+
+
+
+.main {
+  background-color: #f0f0f0;
+  padding: 100px 70px;
+    .container {
+    @include center;
+    padding: 0;
+      .box {
+      @include center;
+      background-color: #fff;
+      width: 100%;
+        .imagebox {
+          width: 50%;
+          .img-fluid {
+            width: 100%;
+            height: 408px;
+          }
+        }
+        .content {
+          width: 50%;
+          padding: 86px 10px 69px 13px;
+          .flexed {
+            @include center;
+            max-width: 64%;
+            .heading {
+              padding-bottom: 33px;
+              h1 {
+                @include font-family;
+                font-size: 42px;
+                font-weight: 700;
+                
+              }
+            }
+            .description {
+              padding:0 4px 21px 0;
+              p {
+                @include font-family;
+                font-size: 16px;
+                font-weight: lighter;                
+                line-height: 26px;
+                letter-spacing: 0.12px; /*problem z czcionką w designie*/
+              }
+            }
+            .button {
+              display: flex;
+              justify-content: flex-end;
+              input {
+                background: #e4c1ae;
+                padding: 11px 44px;
+                border-radius: 50px;
+                text-align: center;
+                font-family: "Roboto", sans-serif;
+                font-weight: 700;
+                color: #ffffff;
+                outline: none;
+                border: none;
+              }
+            }
+          }
+        }
+      }
+    }
+}
+
+
+
+
+
+@media(max-width:1072px) {
+  .main{
+    .container{
+      .box{
+        .content {
+        padding: 60px 10px 60px 10px;
+          .flexed {
+          max-width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+  
+
+@media (max-width:804px){
+  .main{
+    .container{
+      .box{
+        .content {
+        padding: 40px 10px 40px 10px;
+          .flexed {
+          max-width: 90%;
+          }
+        }
+      }
+    }
+  } 
+}
+
+
+@media(max-width:768px){
+  .main{
+    .container{
+      .box{
+        .imagebox{
+        width: 100%;
+        }
+        .content {
+        width: 100%;;        
+        }
+      }
+    }      
+  }
+}
+
+@media(max-width:639px) {
+    .main{
+    padding: 70px 10px;
+      .container{
+        .box{
+          .content{
+            .flexed{
+              h1{
+                text-align: center;
+              }
+              .button{
+                justify-content: center;
+              }
+              p{
+                text-align: center;
+              }
+
+            }
+          }
+        }
+      }
+    } 
+}

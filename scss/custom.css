@@ -1,0 +1,126 @@
+@charset "UTF-8";
+.main {
+  background-color: #f0f0f0;
+  padding: 100px 70px;
+}
+
+.main .container {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.main .container .box {
+  background-color: #fff;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main .container .box .imagebox {
+  width: 50%;
+}
+
+.main .container .box .imagebox .img-fluid {
+  width: 100%;
+  height: 408px;
+}
+
+.main .container .box .content {
+  width: 50%;
+  padding: 86px 10px 69px 13px;
+}
+
+.main .container .box .content .flexed {
+  max-width: 64%;
+  margin: 0 auto;
+}
+
+.main .container .box .content .flexed .heading {
+  padding-bottom: 33px;
+}
+
+.main .container .box .content .flexed .heading h1 {
+  font-family: "Roboto",sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #121212;
+}
+
+.main .container .box .content .flexed .description {
+  padding: 0 4px 21px 0;
+}
+
+.main .container .box .content .flexed .description p {
+  font-family: "Roboto",sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  color: #121212;
+  line-height: 26px;
+  letter-spacing: 0.12px;
+  /*problem z czcionką w designie*/
+}
+
+.main .container .box .content .flexed .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main .container .box .content .flexed .button input {
+  background: #e4c1ae;
+  padding: 11px 44px;
+  border-radius: 50px;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 700;
+  color: #ffffff;
+  outline: none;
+  border: none;
+}
+
+@media (max-width: 1072px) {
+  .main .container .box .content {
+    padding: 60px 10px 60px 10px;
+  }
+  .main .container .box .content .flexed {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 804px) {
+  .main .container .box .content {
+    padding: 40px 10px 40px 10px;
+  }
+  .main .container .box .content .flexed {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main .container .box .imagebox {
+    width: 100%;
+  }
+  .main .container .box .content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 639px) {
+  .main {
+    padding: 70px 10px;
+  }
+  .main .container .box .content .flexed h1 {
+    text-align: center;
+  }
+  .main .container .box .content .flexed .button {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main .container .box .content .flexed p {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=custom.css.map */
